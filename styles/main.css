@@ -1,0 +1,267 @@
+/****************************************
+ * Cornell University Library
+ * Historical Math Monographs Collection - DLXS v12
+ * Main CSS Rules
+ ****************************************/
+ 	
+/****************************************
+ * General Formatting
+ ****************************************/
+
+body {margin: 0; padding: 0; font-family: arial, helvetica, sans-serif; font-size: 63.125%; color: #000000;}
+body.expanded {background: #fff; margin: 10px;}
+ 
+ 
+/****************************************
+ * Cornell Identity
+ ****************************************/
+
+#cu-identity {height: 75px; background: #000; font-family: verdana, arial, helvetica, sans-serif;}
+#cu-logo {position: absolute;top: 0;left: 50%;margin-left: -370px;width: 740px;height: 75px;background: url(../images/Library_2line_blk.gif) no-repeat -8px -1px;}
+#cu-logo a {position: absolute;display: block;border: none;/* hide text link */text-indent: -1000em; }
+#insignia-link {width: 68px;height: 75px;}
+#unit-signature-links a {left: 68px;width: 185px;}
+#cornell-link {height: 38px;}
+#unit-link {top: 38px;height: 37px;}
+#cu-logo img {display: none;}
+
+/*	Search Navigation */
+#search-navigation {position: absolute;top: 37px;right: 50%;margin-right: -385px;}
+#search-navigation ul {margin: 0;padding: 0;font-size: 1.1em;}
+#search-navigation li {float: left;margin: 0;padding: 0;background: none;}	
+#search-navigation a {float: left;padding: 5px 15px;color: #FFFFFF;text-decoration: none;border: none;}
+#search-navigation a:hover {color: #f00; background: #eee;}
+ 
+/****************************************
+ * Header
+ ****************************************/
+ 
+/* Section Title */
+#identity {margin:0 auto; width: 850px; padding: 0; height: 265px; background: #fff url(../images/layout/header.jpg) no-repeat top left;}
+
+
+#identity .banner-image {margin: 0 auto; width:447px;}
+.banner-image img {display:none;}
+
+
+/***************************************
+	Main Navigation 
+****************************************/
+
+#header {
+height:265px; 
+margin:0;
+width: 100%; 
+background: #FFF url(../images/layout/top_bg.jpg) repeat-x top left;
+float:left;
+}
+
+#navigation {
+bottom:85px;
+margin:0 auto;
+position:relative;
+width:850px;
+padding:0;
+
+}
+
+#navigation ul {
+width: 450px; 
+margin:0 195px; 
+font-size: 1em;
+list-style:none;}
+
+#navigation li {
+text-align:center;
+margin:0;
+padding:0 10px;
+width:70px;
+float:left;
+color:#991C00;
+font-family:Palatino,Georgia,serif;
+font-size:12px;
+text-decoration:none; 
+list-style:none;
+background:none;
+}
+
+#navigation a {border: none; font-size: 14px; text-decoration: none; display:block; padding:70px 0 0;
+ }
+ 
+ * html #navigation a {height:0; padding:65px 0 0;}
+
+#navigation a:hover {border-bottom:4px solid #991C00;color:#991C00;}
+#navigation a:visited {color:#991C00;}
+
+* html #navigation a:hover {border-bottom:none; text-decoration:underline;}
+
+#nav-about, #nav-help, #nav-browse, #nav-search, #nav-home  {
+font-weight:bold; 
+} 
+
+/* Sub-Navigation */
+#about-intro #nav-intro, #about-print #nav-print, #about-guidelines #nav-guidelines, #about-permissions #nav-permissions, #about-contact #nav-contact, #about-collection #nav-collection, #about-implement #nav-implement, #about-conversion #nav-conversion, #about-faq #nav-faq {font-weight: bold; color: #666;}
+
+/* second-level pages */
+.second-level #identity {height: 57px;}
+
+/****************************************
+ * Content Sections
+ ****************************************/
+
+#wrap {width: 100%;float:left;}
+
+*html #wrap {position:relative; bottom:80px;}
+
+#content {margin: 0 auto;width: 850px; background: #FFFFFF url(../images/layout/body.jpg) repeat-y top left; }
+
+#main {float:right; padding:0 70px 40px 40px; width:700px;margin:40px 0 0;}
+
+/* fix the mozilla container height issue for #content - doesn't show background color because of floated divs within it */
+
+#content:after {content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+
+/* Description, main text area */
+#description {float: left; width: 460px; margin: 8px 0 0 0;}
+
+/* Inset */
+#inset {float: right; margin: 8px 15px 15px 0; width: 185px; border-left: 1px solid #991C00;}
+#inset-content {padding: 0 0 0 20px;}
+#inset ul {font-size: 1.1em;}
+
+/* secondary section - undered featured content box */
+#secondary-section {margin: 25px 0 0 0; padding: 0; color: #555; text-align: center;}
+#secondary-section img {margin: 0 0 10px 0;}
+
+ 
+/****************************************
+ * Text Styles
+ ****************************************/
+ 
+/* Headlines */
+h1 {font-family: georgia, "times new roman", times, serif; font-style: italic; font-size: 2.0em; font-weight: normal; margin: 0 0 10px 0; padding: 0; clear: left;}
+h2 {font-family: georgia, "times new roman", times, serif; font-size: 1.8em; font-weight: normal; margin: 0 0 10px 0; padding: 0; color: #666;}
+h3 {clear: both; margin: 0 0 10px 0; font-size: 1.5em; line-height: 1.4em; font-weight: bold; color: #666;}
+h4 {margin: 0 0 5px 0; font-size: 1.2em;}
+
+/* Text */
+p {margin: 0 0 15px 0; font-size: 1.2em;line-height: 1.6em;}
+blockquote {margin: 0 30px;}
+	
+/* captions */
+.caption {font-size: 1.1em; line-height: 1.5em; color: #666; text-align: center; padding-top: 10px;}
+	
+/* Lists */
+ul, ol {margin: 0 0 15px 0;padding: 0;font-size: 1.2em;line-height: 1.5em;}
+ul li {margin: 0 0 5px 0;padding: 0 0 0 30px;list-style: none;background: url(../images/layout/bullet.gif) no-repeat 18px 0.65em;}
+ol li {margin: 5px 0 5px 30px;}
+ul ul, ul ol, ol ol, ol ul {font-size: 1.0em;}
+dl {margin: 0 0 15px 0;line-height: 1.4em;}
+dt {margin: 0 0 3px 0;font-size: 1.2em;font-weight: bold;}
+dd {margin: 0 0 15px 0;font-size: 1.3em;line-height: 1.4em;}
+
+/* Links */
+a {color: #991C00; text-decoration: none;}	
+a:visited {color: #666666;}
+a:hover {color: red; text-decoration: underline;}	
+a:active {color: #991C00;}
+a.pod-link, a.pod-link:visited {margin-left: 5px; color: brown; }
+a.pod-link:hover, a.pod-link:visited:hover {text-decoration: underline;}
+
+ 
+/****************************************
+ * Images
+ ****************************************/
+
+img {border: 0;}
+
+/****************************************
+ * Forms
+ ****************************************/
+
+fieldset {float: left;margin: 0;padding: 10px 0 15px 0;width: 460px;border: none;}
+.form-pair {display: inline;	/* prevent ie6/win from doubling margins */float: left;margin: 5px 15px 0 15px;width: 430px;}
+.form-item {float: left;margin-top: 7px;width: 105px;font-size: 1.1em;line-height: 1.5em;text-align: right;}	
+.form-value {float: right;margin-top: 5px;width: 310px;font-size: 1.1em;line-height: 1.5em;}
+.input-text, select, textarea {font-family: verdana, arial, helvetica, sans-serif;font-size: 1em;}
+.form-submit {border-top: 1px dashed #d2d2d2;}
+.form-submit-buttons {text-align: right;padding-right: 15px;}
+.form-submit-buttons .input-reset {margin-right: 5px;}
+.input-browse {font-family: verdana, arial, helvetica, sans-serif;}
+.input-submit, .input-reset {font-size: 1.2em;}
+.input-submit {font-weight: bold;}
+
+/****************************************
+ * Footer
+ ****************************************/
+ 
+#footer {float: left; width: 100%;}
+
+*html #footer {position:relative;bottom:80px; float:left; }
+
+#footer-content {background: transparent url(../images/layout/footer.jpg) top center no-repeat;margin: 0 auto; width: 850px; font-size: 1.0em; height:132px; }
+
+#footer-content p { margin:0 80px 0 0;
+text-align:right;padding:25px 0 0 0;}
+ 
+/****************************************
+ * Miscellaneous
+ ****************************************/
+
+/* 
+	Hide "skip to content" link from general users. 
+	Do not use display: none, as that will also hide it from some screen readers.
+*/
+#skipnav {position: absolute;top: -1000em;left: -1000em;}
+	
+/* 
+	Hide horizontal rules (hr) that are found throughout the site.
+	The rules are semantic separations of content, and they are useful for 
+	browsers that cannot utilize the stylesheet.
+*/	
+hr {
+	display: none;
+	}
+ 
+	
+/****************************************
+ * Miscellaneous rules
+ ****************************************/
+.center {text-align: center;}
+.floatright {float: right; margin: 0 0 20px 20px;}
+.bold {font-weight: bold;}
+.small {font-size: 1.1em;}
+.italic {font-style: italic;}
+.right {text-align: right;}
+.floatright-link {font-size: 1.1em; float: right; padding: 10px 0 0 0; font-weight: bold;}
+.emphasis {padding: 4px 8px; border: 1px solid #f08615; text-transform: uppercase; font-weight: bold; letter-spacing: 0.1em; color: #f08615; margin-right: 3px;}
+.floatleft {float: left;padding:0 10px 0 0;}
+.disclaimer {font-size: 1.0em; color: #444;}
+.divider {border-top: 1px dotted #991C00 padding-top: 10px;}
+.border {border: 1px solid #d7ebf3;}
+
+.extra-text {
+padding: 10px; 
+margin: 40px 0 0 0; 
+font-size: 1.1em; 
+border-top:1px dashed #991C00; 
+border-bottom:1px dashed #991C00;
+}
+
+/* link to Cornell University Library on DLXS-level pages 
+#cul-link {float: right; margin: 15px 10px 0 0; padding: 0;}
+#cul-link a, #cul-link a:hover, #cul-link a:visited, #cul-link a:visited:hover {font-size: 1.1em; font-weight: bold;}*/
+
+/* A-Z list at top of browse pages */
+#browse-list {font-size: 0.9em; margin: 0 0 20px 0;}
+#browse-list ul {margin: 0 0 10px 0; padding: 0;}
+#browse-list li {display: inline; background: none; margin: 0; padding: 0; text-transform: uppercase;}
+#browse-list li a {display: inline; padding: 3px 5px; color: #991C00; text-decoration: none;}
+#browse-list li a.current {background: #000; color: #fff;}
+#browse-list li a:hover {background: #991C00; color: #fff;}
+#browse-list li a.current:hover {background: #000;}
+
+/* home page cover images */
+#titles {margin: 40px 0 0 0;}
+#titles img {float: left; border: 1px solid #ccc;}
+#titles .cover {margin-left: 15px;}
